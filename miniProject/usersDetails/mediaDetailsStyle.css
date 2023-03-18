@@ -1,0 +1,29 @@
+@media screen and (min-width: 0px) and (max-width: 800px){
+    body{
+        background-color: white;
+    }
+    .main{
+        width: 400px;
+        background-color: #d7cbcb;
+    }
+    .father{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button{
+        width: 400px;
+    }
+
+    .ulHolder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        margin-left: 50px;
+    }
+
+
+    
+}

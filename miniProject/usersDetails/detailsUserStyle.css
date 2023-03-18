@@ -2,6 +2,7 @@ body{
     background-color: #d7cbcb;
 }
 .main{
+    background-color: white;
     padding: 5px;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -18,9 +19,10 @@ b{
 
 }
 .father{
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    background: white;
+    /*background: white;*/
 }
 
 a{
@@ -34,9 +36,11 @@ li:hover {
     transform-style: preserve-3d;
 }
 .ulDiv{
-    margin-top: 50px;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    width: 100%;
+    margin-top: 25px;
+}
+.ulHolder{
+    width: 100%;
 }
 .buttDiv{
     width: 100%;

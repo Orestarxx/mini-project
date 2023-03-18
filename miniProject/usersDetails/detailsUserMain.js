@@ -110,18 +110,24 @@ let fatherDiv = document.createElement(`div`);
  buttDiv.append(butt)
 
 let divUl = document.getElementById('ulDiv');
+ divUl.classList.add('ulDiv')
 divUl.style.display = "none";
 
- let ul = document.createElement(`ul`);
- document.body.appendChild(divUl);
- divUl.appendChild(ul);
+ let ulHolder = document.createElement('div');
+ ulHolder.classList.add('ulHolder');
+ divUl.appendChild(ulHolder);
+
+
+ // let ul = document.createElement(`ul`);
+ // document.body.appendChild(divUl);
+ // divUl.appendChild(ul);
 
 
  fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
      .then(response => response.json())
      .then(posts => {
       let ul = document.createElement(`ul`);
-      divUl.appendChild(ul);
+      ulHolder.appendChild(ul);
       document.body.appendChild(divUl);
 
       for (const post of posts) {
