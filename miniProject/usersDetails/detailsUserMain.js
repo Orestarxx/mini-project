@@ -11,22 +11,26 @@ let fatherDiv = document.createElement(`div`);
 
  let idd1 = document.createElement(`div`);
  idd1.classList.add(`index`);
- idd1.innerHTML =`<b>id:</b>${user.id}`;
+ idd1.innerHTML =`<b>id:</b>
+<span class="textColor">${user.id}</span>`;
  maind.appendChild(idd1);
 
  let named2 = document.createElement(`div`);
  named2.classList.add(`name`);
- named2.innerHTML =`<b>name:</b>${user.name}`;
+ named2.innerHTML =`<b>name:</b>
+<span class="textColor">${user.name}</span>`;
  maind.appendChild(named2);
 
  let userND3 = document.createElement(`div`);
  userND3.classList.add(`uName`);
- userND3.innerHTML=`<b>userName:</b>${user.username}`;
+ userND3.innerHTML=`<b>userName:</b>
+<span class="textColor">${user.username}</span>`;
  maind.appendChild(userND3);
 
  let emaild4 = document.createElement(`div`);
  emaild4.classList.add(`email`);
- emaild4.innerHTML=`<b>email:</b>${user.email}`
+ emaild4.innerHTML=`<b>email:</b>
+<span class="textColor">${user.email}</span>`
  maind.appendChild(emaild4);
 
  let adred5 = document.createElement(`div`);
@@ -36,22 +40,26 @@ let fatherDiv = document.createElement(`div`);
 
  let street = document.createElement(`div`);
  street.classList.add(`second`)
- street.innerHTML =`Street:${user.address.street}`;
+ street.innerHTML =`<span class="userDetail">Street:</span>
+<span class="textColor">${user.address.street}</span>`;
  adred5.appendChild(street);
 
  let suite = document.createElement(`div`);
  suite.classList.add(`second`);
- suite.innerHTML =`Suite:${user.address.suite}`;
+ suite.innerHTML =`<span class="userDetail">Suite:</span>
+<span class="textColor">${user.address.suite}</span>`;
  adred5.appendChild(suite);
 
  let city = document.createElement(`div`);
  city.classList.add(`second`);
- city.innerHTML =`City:${user.address.city}`;
+ city.innerHTML =`<span class="userDetail">City:</span>
+<span class="textColor">${user.address.city}</span>`;
  adred5.appendChild(city);
 
  let zip = document.createElement(`div`);
  zip.classList.add(`second`);
- zip.innerHTML =`Zipcode:${user.address.zipcode}`;
+ zip.innerHTML =`<span class="userDetail">Zipcode:</span>
+<span class="textColor">${user.address.zipcode}</span>`;
  adred5.appendChild(zip);
 
  let geo = document.createElement(`div`);
@@ -61,22 +69,26 @@ let fatherDiv = document.createElement(`div`);
 
  let lat = document.createElement(`div`);
  lat.classList.add(`third`);
- lat.innerHTML =`Lat:${user.address.geo.lat}`
+ lat.innerHTML =`<span class="userDetail">Lat:</span>
+<span class="textColor">${user.address.geo.lat}</span>`
  geo.appendChild(lat);
 
  let lng = document.createElement(`div`);
  lng.classList.add(`third`);
- lng.innerHTML =`Lng:${user.address.geo.lng}`;
+ lng.innerHTML =`<span class="userDetail">Lng:</span>
+<span class="textColor">${user.address.geo.lng}</span>`;
  geo.appendChild(lng);
 
  let phone = document.createElement(`div`);
  phone.classList.add(`phone`);
- phone.innerHTML =`<b>phone:</b>${user.phone}`;
+ phone.innerHTML =`<b>phone:</b>
+<span class="textColor">${user.phone}</span>`;
  maind.appendChild(phone);
 
  let web = document.createElement(`div`);
  web.classList.add(`web`);
- web.innerHTML =`<b>webSite:</b>${user.website}`;
+ web.innerHTML =`<b>webSite:</b>
+<span class="textColor">${user.website}</span>`;
  maind.appendChild(web);
 
  let company = document.createElement(`div`);
@@ -86,17 +98,20 @@ let fatherDiv = document.createElement(`div`);
 
  let nameFourth = document.createElement(`div`);
  nameFourth.classList.add(`fourth`);
- nameFourth.innerHTML =`Name:${user.company.name}`;
+ nameFourth.innerHTML =`<span class="userDetail">Name:</span>
+<span class="textColor">${user.company.name}</span>`;
  company.appendChild(nameFourth);
 
  let catchF = document.createElement(`div`);
  catchF.classList.add(`fourth`);
- catchF.innerHTML =`CatchFrase:${user.company.catchPhrase}`;
+ catchF.innerHTML =`<span class="userDetail">CatchFrase:</span>
+<span class="textColor">${user.company.catchPhrase}</span>`;
  company.appendChild(catchF);
 
  let bs = document.createElement(`div`);
  bs.classList.add(`fourth`);
- bs.innerHTML =`Bs:${user.company.bs}`;
+ bs.innerHTML =`<span class="userDetail">Bs:</span>
+<span class="textColor">${user.company.bs}</span>`;
  company.appendChild(bs);
 
  let buttDiv = document.createElement('div');
@@ -116,11 +131,6 @@ divUl.style.display = "none";
  let ulHolder = document.createElement('div');
  ulHolder.classList.add('ulHolder');
  divUl.appendChild(ulHolder);
-
-
- // let ul = document.createElement(`ul`);
- // document.body.appendChild(divUl);
- // divUl.appendChild(ul);
 
 
  fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)

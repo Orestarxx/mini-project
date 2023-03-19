@@ -19,7 +19,6 @@ body{
 .user{
     width: 200px;
     height: 100px;
-    /*border: 1px solid;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,4 +32,7 @@ body{
 }
 a{
     text-decoration: none;
+}
+.textColor{
+    color: black;
 }

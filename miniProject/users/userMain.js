@@ -17,7 +17,7 @@ fetch(usersUrl)
             refI.append(userDiv);
 
             let h5User = document.createElement('h5');
-            h5User.innerText = `${user.id} - ${user.name}`;
+            h5User.innerHTML = `<span class="textColor">${user.id} - ${user.name}</span>`;
             userDiv.append(h5User);
         }
     })

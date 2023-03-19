@@ -1,6 +1,12 @@
 body{
     background-color: #d7cbcb;
 }
+#main{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
 #postHolder{
     padding: 5px;
     align-items: center;

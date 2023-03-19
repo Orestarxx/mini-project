@@ -1,0 +1,36 @@
+@media screen and (min-width: 0px) and (max-width: 800px){
+    body{
+        background-color: white;
+    }
+    .main, .button{
+        width: 400px;
+    }
+    .father, .ulHolder, #main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        margin-left: 50px;
+    }
+    .user, .commentDiv{
+        margin-top: 10px;
+    }
+    .main, .user, .commentDiv{
+        background-color: #d7cbcb;
+    }
+    #postHolder{
+        background-color: #d7cbcb;
+        width: 400px;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    .textColor{
+        color: black;
+    }
+    #userHolder{
+        width: 210px;
+    }
+}

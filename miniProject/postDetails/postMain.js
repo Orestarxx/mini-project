@@ -7,16 +7,16 @@ const mainDiv = document.getElementById('main');
 const postHolder = document.getElementById('postHolder');
 
 const divUserId = document.createElement('div');
-divUserId.innerHTML = `<b>UserID:</b> ${post.userId}`;
+divUserId.innerHTML = `<b>UserID:</b><span class="textColor">${post.userId}</span>`;
 
 const divId = document.createElement('div');
-divId.innerHTML = `<b>ID:</b> ${post.id}`;
+divId.innerHTML = `<b>ID:</b> <span class="textColor">${post.id}</span>`;
 
 const titleDiv = document.createElement('div');
-titleDiv.innerHTML =`<b>Title:</b> ${post.title}`;
+titleDiv.innerHTML =`<b>Title:</b> <span class="textColor">${post.title}</span>`;
 
 const bodyDiv = document.createElement('div');
-bodyDiv.innerHTML = `<b>Body:</b> ${post.body}`
+bodyDiv.innerHTML = `<b>Body:</b> <span class="textColor">${post.body}</span>`
 
 const commentsHolder = document.createElement('div');
 commentsHolder.classList.add('commentsHolder');
@@ -38,27 +38,27 @@ mainDiv.append(postHolder,commentsHolder);
   commentsHolder.append(commentDiv);
 
   const commentId = document.createElement('div');
-  commentId.innerHTML = `<b>ID:</b> ${comment.id}`;
+  commentId.innerHTML = `<b>ID:</b> <span class="textColor">${comment.id}</span>`;
   commentId.classList.add('commentDetails')
 
 
   const commentPostId = document.createElement('div');
-  commentPostId.innerHTML = `<b>PostID:</b> ${comment.postId}`;
+  commentPostId.innerHTML = `<b>PostID:</b><span class="textColor">${comment.postId}</span>`;
   commentPostId.classList.add('commentDetails')
 
 
   const nameDiv = document.createElement('div');
-  nameDiv.innerHTML = `<b>Name:</b> ${comment.name}`;
+  nameDiv.innerHTML = `<b>Name:</b> <span class="textColor">${comment.name}</span>`;
   nameDiv.classList.add('commentDetails')
 
 
   const emailDiv = document.createElement('div');
-  emailDiv.innerHTML = `<b>Email:</b> ${comment.email}`;
+  emailDiv.innerHTML = `<b>Email:</b> <span class="textColor">${comment.email}</span>`;
   emailDiv.classList.add('commentDetails')
 
 
   const bodyDiv = document.createElement('div');
-  bodyDiv.innerHTML = `<b>Body:</b> ${comment.body}`;
+  bodyDiv.innerHTML = `<b>Body:</b> <span class="textColor">${comment.body}</span>`;
   bodyDiv.classList.add('commentDetails')
 
   commentDiv.append(commentId,commentPostId,nameDiv,emailDiv,bodyDiv);
